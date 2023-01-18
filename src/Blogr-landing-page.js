@@ -63,7 +63,7 @@ import {data, modal} from "./data.js";
   }
 
   function displayOnResize() {
-    if (window.matchMedia("(width<=400px)").matches) {
+    if (window.matchMedia("(width<=375px)").matches) {
       // RULES
       document.querySelectorAll('.desktop').forEach(item => {
         item.classList.add('hidden');
@@ -77,7 +77,7 @@ import {data, modal} from "./data.js";
       document.querySelector('.foot-list').classList.remove('flex-row');
     }
       
-    if (window.matchMedia("(width>400px)").matches) {
+    if (window.matchMedia("(width>375px)").matches) {
       // RULES
       document.querySelectorAll('.mobile').forEach(item => {
         item.classList.add('hidden');
